@@ -16,7 +16,7 @@
     <!-- web PC端 -->
     <div class="conbox">
         <!-- 左边导航-->
-        <div style="position:absolute;width:130px;left:0;top:0;height:100%;">
+        <div style="position:absolute;width:130px;left:0;top:0;height:100%;z-index: 100">
             <div class="left mobilenone">
                 <ul style="margin-left:10px;">
                     <li><a href="#">首页</a></li>
@@ -25,12 +25,34 @@
                     <li style="line-height:40px;">
                         <a href="editPage.html"><button type="button" class="am-btn am-btn-default" style="color:#999">写听后感</button></a>
                     </li>
-                    <li style="margin-left:-5px;">
-                        <span class="am-icon-search am-icon-btn" ></span>
-                    </li>
-                </ul>
+                    <li>
+                            <button style="background: none;border:none">
+                               <span class="am-icon-search am-icon-btn am-dropdown-toggle" ></span>
+                            </button>
+                     </li>
+                  </ul>
+                <div  style="position:absolute;left:100px;bottom:28px;z-index: 9998;display: none">
+                    <p><input type="search" placeholder="搜听后感、歌曲"/><b class="am-icon-search"></b></p>
+                </div>
+                <div class="popsong" style="position:absolute;left:110px;bottom:72px;z-index: 9999;background:#fff;display: none">
+                    <div class="sglist">
+                        <p>歌曲</p>
+                        <ul>
+                            <li><span>罗门生</span><span>-麦浚龙</span></li>
+                            <li><span>罗门生</span><span>-麦浚龙</span></li>
+                            <li><span>罗门生</span><span>-麦浚龙</span></li>
+                        </ul>
+                    </div>
+                    <div class="artical">
+                        <p>文章</p>
+                        <ul>
+                            <li>听<span>罗门生</span>有感</li>
+                            <li>听<span>罗门生</span>有感</li>
+                        </ul>
+                    </div>
+                </div>
+              </div>
             </div>
-        </div>
         <!-- 中间部分-->
         <div class="center">
             <!-- 中间部分左侧-->
@@ -49,54 +71,70 @@
                 <div class="add mobilenone">
                     <p><b class="am-icon-plus"></b>添加封面</p>
                 </div>
-                <div class="edtit mobilenone ">
-                    <p>无标题文章</p>
+                <div class="upload">
+                    <span class="am-icon-btn am-icon-close"></span>
+                    <p>本地上传<strong>或</strong>网络图片</p>
+                    <button>选择图片上传</button>
+                    <p style="font-size:1.2rem">请不要上传与主题无关或色情的图片</p>
                 </div>
-                <!-- 手机端上部-->
+                <div class="edtit mobilenone ">
+                    <textarea  placeholder="无标题文章"></textarea>
+                </div>
+                <div class="editwrite">
+                    <!-- 手机端上部-->
                     <div class="mbedit pcnone">
                         <form class="am-form">
-                        <div class="top">
-                            <span class="am-icon-play-circle-o" style="font-size:3.5rem"></span>
-                            <span style="position:absolute;left:48%;top:0">播放歌曲</span>
-                            <span class="am-fr" style="margin-right:15px;font-size:2.2rem">发布</span>
-                        </div>
-                        <div class="mid">
-                            <p><b class="am-icon-plus"></b>添加封面</p>
-                        </div>
-                        <div class="bot" style="padding:1rem">
-                            <input type="search" placeholder="请输入标题" style="height:40px;font-size:2.3rem;"/>
-                            <input type="search" placeholder="请选择歌曲" style="height:30px;font-size:1.5rem;"/>
-                            <textarea rows="10" placeholder="请输入正文" style="font-size:1.8rem;border: 0"></textarea>
-                        </div>
+                            <div class="top">
+                                <span class="am-icon-play-circle-o" style="font-size:3.5rem"></span>
+                                <span style="position:absolute;left:48%;top:0">播放歌曲</span>
+                                <span class="am-fr" style="margin-right:15px;font-size:2.2rem">发布</span>
+                            </div>
+                            <div class="mid">
+                                <p><b class="am-icon-plus"></b>添加封面</p>
+                            </div>
+                            <div class="bot" style="padding:1rem">
+                                <input type="search" placeholder="请输入标题" style="height:40px;font-size:2.3rem;"/>
+                                <input type="search" placeholder="请选择歌曲" style="height:30px;font-size:1.5rem;"/>
+                                <textarea rows="10" placeholder="请输入正文" style="font-size:1.8rem;border: 0"></textarea>
+                            </div>
                         </form>
                     </div>
                     <!-- pc端、手机端下图标-->
                     <div class="edicon" style="height: 53px;">
-                      <span class="icon am-fl" >
+                    <span class="icon am-fl" >
                         <a href="#" class="word">词</a>
                         <a href="#" class="am-icon-rotate-left"></a>
                         <a href="#" class="am-icon-rotate-right"></a>
                         <a href="#" class=" am-icon-chevron-down am-fr pcnone"></a>
-                      </span>
-                      <span class="btn am-fr mobilenone">
+                    </span>
+                    <span class="btn am-fr mobilenone">
                         <a href="#">保存</a>
                         <a href="#">发布</a>
-                      </span>
+                    </span>
                     </div>
-                <div class="edtxt mobilenone">
-                    <form class="am-form">
-                        <div class="am-dropdown" data-am-dropdown style="width:100%;padding:1rem;">
-                            <button class="am-btn am-btn-success am-dropdown-toggle" style="background:none;border:none;padding:0;margin-bottom:1rem;">
-                            <span class="am-panel-title">请选择歌曲></span>
-                            </button>
-                            <div class="am-dropdown-content " style="border:none;position:absolute;top:-10px;left:230px;">
-                                <p><input type="search" placeholder="请选择歌曲名称"/><b class="am-icon-search"></b></p>
+                    <div class="edtxt mobilenone">
+                        <form class="am-form">
+                            <div class="am-dropdown" data-am-dropdown style="width:100%;padding-left:20px;">
+                                <button class="am-btn am-btn-success am-dropdown-toggle" style="background:none;border:none;padding:0;margin-bottom:1rem;">
+                                    <span class="am-panel-title">请选择歌曲></span>
+                                </button>
+                                <div class="am-dropdown-content " style="border:none;position:absolute;top:-23px;left:215px;">
+                                    <p><input type="search" placeholder="请选择歌曲名称"/><b class="am-icon-search"></b></p>
+                                </div>
+                                <div class="textarea" contenteditable="true">
+                                    输入文本....
+                                </div>
                             </div>
-                            <div class="textarea" contenteditable="true">
-                                输入文本....
-                            </div>
+                        </form>
+                        <div class="popchoose">
+                                <p>歌曲</p>
+                                <ul>
+                                    <li><span>罗门生</span><span>-麦浚龙</span></li>
+                                    <li><span>罗门生</span><span>-麦浚龙</span></li>
+                                    <li><span>罗门生</span><span>-麦浚龙</span></li>
+                                </ul>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
        </div>
