@@ -1,0 +1,56 @@
+
+/*ÎÒµÄÖ÷Ò³*/
+
+.content{
+    color:#FFFFFF;
+    height:100%;
+}
+.conbox{
+    height:100%;
+}
+.conbox .left{
+    font-size:20px;
+    padding-top:200px;
+    position:fixed;
+    left:0;
+    top:0;
+    line-height:50px;
+}
+.conbox .left li{
+    width:70%;
+    text-align: center;
+}
+.conbox .left .active{
+    color:#00bfff;
+    border-bottom:3px solid #00bfff;
+}
+
+.conbox .center{
+    background: #fff;
+    margin-left:8%;
+    color:#999;
+    height:100%;
+    padding-top:100px;
+}
+.center .mydata{
+    width:60%;
+    margin:0 auto 0 auto;
+}
+.mydata .dataleft
+.conbox .right{
+    padding-left:50px;
+    padding-top:100px;
+    position:fixed;
+    right:0;
+    top:0;
+}
+.right span{
+    font-weight:900;
+    font-size:2.5rem;
+}
+.right .chesong{
+    font-size:1.4rem;
+    text-decoration: underline;
+}
+
+

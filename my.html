@@ -1,0 +1,111 @@
+<!doctype html>
+<!--[if lt IE 8 ]> <html class="no-js ie7 lt-ie8 lt-ie9" lang="zh-CN"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8 lt-ie9" lang="zh-CN"> <![endif]-->
+<!--[if IE 9 ]>    <html class="no-js ie9" lang="zh-CN"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="zh-CN"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <!--meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>消息</title>
+
+    <!-- 地址栏、收藏夹和苹果设备图标 -->
+    <link rel="shortcut icon" href="ico/favicon.ico" />
+    <link rel="Bookmark"  href="ico/favicon.ico" />
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="ico/apple-touch-icon-57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+
+    <!-- Bootstrap样式 -->
+    <link href="css/bootstrap.min.css" type="text/css"rel="stylesheet">
+    <link href="css/reset.css" type="text/css" rel="stylesheet">
+    <link href="css/mypc.css" type="text/css" rel="stylesheet">
+    <link href="css/" type="text/css" rel="stylesheet" media="(max-width:614px)">
+
+    <script src="js/modernizr.min.js"></script>
+    <!--[if (gte IE 6)&(lte IE 8)]>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="content">
+    <!-- web PC端 -->
+    <div class="row conbox">
+        <!-- 左边导航-->
+        <div class=" col-sm-1 col-md-1 col-lg-1 hidden-xs left ">
+            <ul class="nav nav-stacked">
+                <li>首页</li>
+                <li>消息</li>
+                <li class="active">我的</li>
+                <li style="line-height:60px;">
+                    <button type="button" class="btn btn-default">写听后感</button>
+                </li>
+                <li>
+                    <span class="btn btn-default glyphicon glyphicon-search" style="width: 45px;height:45px;font-size:2rem;line-height: 35px; -moz-border-radius: 50%;-webkit-border-radius: 50%; border-radius: 50%;"></span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 中间部分-->
+        <div class="col-sm-9 col-md-9 col-lg-9 center">
+           <div class="mydata">
+               <div class="dataleft">
+                 <ul>
+                     <li><img src="img/u14.png"></li>
+                     <li><span class="btn btn-default">华语</span><span class="btn btn-default">爵士</span></li>
+                 </ul>
+               </div>
+               <div class="dataright">
+                   <ul>
+                       <li><span>Colin陈</span><span class="glyphicon glyphicon-cog"></span></li>
+                       <li>
+                           <ul>
+                               <li><strong>20</strong><span>我的听后感</span></li>
+                               <li><strong>1153</strong><span>听后感被喜欢</span></li>
+                               <li><strong>43</strong><span>听后感被收藏</span></li>
+                               <li><strong>115</strong><span>关注我的人</span></li>
+                               <li><strong>26</strong><span>我关注的人</span></li>
+                           </ul>
+                       </li>
+                   </ul>
+               </div>
+           </div>
+        </div>
+
+        <!-- 右边播放曲目-->
+        <div class="col-sm-2 col-md-2 col-lg-2 hidden-xs right">
+            <ul>
+                <li><span class="name">罗门生</span></li>
+                <li>
+                    <span class="glyphicon glyphicon-play-circle" style="font-size:3.5rem; font-weight:normal;line-height:60px;"></span>
+                </li>
+                <li><a href="#"><span class="chesong">查看歌曲</span></a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- jQuery库 -->
+    <script src="js/jquery.min.js"></script>
+    <!--[if (gte IE 6)&(lte IE 8)]>
+    <script src="js/selectivizr-min.js"></script>
+    <![endif]-->
+
+    <!-- Bootstrap库 -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!--[if (gte IE 6)&(lte IE 8)]>
+    <script type="text/javascript" src="pie/PIE.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.pie').each(function () {
+                PIE.attach(this);
+            });
+        });
+    </script>
+    <![endif]-->
+</body>
+</html>
