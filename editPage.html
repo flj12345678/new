@@ -1,3 +1,4 @@
+/*编辑页*/
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,8 +7,9 @@
 
     <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
     <link rel="stylesheet" type="text/css" href="css/amazeui.css">
-    <link rel="stylesheet" type="text/css" href="css/editpc.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/comment.css">
+    <link rel="stylesheet" type="text/css" href="css/editpc.css">
     <link rel="stylesheet" href="css/editmb.css"  type="text/css" media="(max-width:614px)" />
 
 </head>
@@ -53,6 +55,7 @@
                 </div>
               </div>
             </div>
+
         <!-- 中间部分-->
         <div class="center">
             <!-- 中间部分左侧-->
@@ -73,7 +76,7 @@
                 </div>
                 <div class="upload">
                     <span class="am-icon-btn am-icon-close"></span>
-                    <p>本地上传<strong>或</strong>网络图片</p>
+                    <p style="color:#000;">本地上传<strong style="color:#999">或</strong>网络图片</p>
                     <button>选择图片上传</button>
                     <p style="font-size:1.2rem">请不要上传与主题无关或色情的图片</p>
                 </div>
@@ -83,15 +86,15 @@
                 <div class="editwrite">
                     <!-- 手机端上部-->
                     <div class="mbedit pcnone">
+                        <div class="top">
+                            <span class="am-icon-play-circle-o" style="font-size:3.5rem"></span>
+                            <span style="position:absolute;left:48%;top:0">播放歌曲</span>
+                            <span class="am-fr" style="margin-right:15px;font-size:2.2rem">发布</span>
+                        </div>
+                        <div class="mid">
+                            <p><b class="am-icon-plus"></b>添加封面</p>
+                        </div>
                         <form class="am-form">
-                            <div class="top">
-                                <span class="am-icon-play-circle-o" style="font-size:3.5rem"></span>
-                                <span style="position:absolute;left:48%;top:0">播放歌曲</span>
-                                <span class="am-fr" style="margin-right:15px;font-size:2.2rem">发布</span>
-                            </div>
-                            <div class="mid">
-                                <p><b class="am-icon-plus"></b>添加封面</p>
-                            </div>
                             <div class="bot" style="padding:1rem">
                                 <input type="search" placeholder="请输入标题" style="height:40px;font-size:2.3rem;"/>
                                 <input type="search" placeholder="请选择歌曲" style="height:30px;font-size:1.5rem;"/>
@@ -121,10 +124,8 @@
                                 <div class="am-dropdown-content " style="border:none;position:absolute;top:-23px;left:215px;">
                                     <p><input type="search" placeholder="请选择歌曲名称"/><b class="am-icon-search"></b></p>
                                 </div>
-                                <div class="textarea" contenteditable="true">
-                                    输入文本....
-                                </div>
                             </div>
+                            <textarea  placeholder="输入文本....." style="height:800px;width:650px;margin-left:20px;border:none;resize:none;"></textarea>
                         </form>
                         <div class="popchoose">
                                 <p>歌曲</p>
@@ -200,8 +201,25 @@
             </div>
         </div>
     </div>
-        </div>
+</div>
 
+
+    <script type="text/javascript">
+        $(document).ready(function(e) {
+            var edt=$(".editwrite");
+            var win=$(window);
+            var sc=$(document);
+
+            win.scroll(function(){
+                if(sc.scrollTop()>=359){
+                    sc.scrollTop(359);
+                    edt.addClass("fixededit");
+                }else{
+                    edt.removeClass("fixededit");
+                }
+            })
+        });
+    </script>
     <script src="js/modernizr.min.js"></script>
     <!--[if (gte IE 6)&(lte IE 8)]>
     <script src="js/respond.min.js"></script>

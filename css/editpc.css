@@ -1,104 +1,6 @@
 
-/*±à¼­Ò³Ê×Ò³*/
+/*±à¼­Ò³*/
 /*content*/
-.content{
-    color:#FFFFFF;
-    width:1280px;
-    margin:0 auto;
-    position:relative;
-}
-
-.conbox .left{
-    font-size:18px;
-    padding-top:200px;
-    position:fixed;
-    width:130px;
-    line-height:50px;
-}
-
- .left a{
-    display: block;
-    height:60px;
-    width:100%;
-}
-
- .left button{
-    width:80px;
-    font-size:1.5rem;
-    margin-left:-25px;
-    margin-bottom:10px;
-    padding-left:10px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius:5px;
-    border-radius:5px;
-}
- .left li:last-child button{
-    width: 48px;
-    height: 48px;
-    font-size:2rem;
-    line-height: 48px;
-}
-.edtxt .popchoose,
- .left .popsong{
-    z-index: 9999;
-    width:562px;
-     padding:10px 20px 0 20px;
-    height:270px;
-     font-size:1.5rem;
-    color:#333;
-     background: #fff;
-     border:1px solid #dedede;
-    -moz-border-radius: 5px;
-    -webkit-border-radius:5px;
-    border-radius:5px;
-}
-.popsong .sglist ,
-.popsong .artical{
-    width:260px;
-    float:left;
-}
-.popsong .sglist{
-    border-right:1px solid #dedede;
-}
-.popsong ul{
-    padding-left:10px;
-   margin-top:0;
-}
-.popsong .artical ul{
-    padding-left:30px;
-}
-.edtxt .popchoose li,
-.popsong ul li{
-    width:200px;
-    margin-top:10px;
-    line-height:35px;
-    border-bottom:1px solid #dedede;
-}
-.popsong li span:first-child{
-    color:#00bfff;
-}
-.popsong  p{
-    height:50px;
-    text-align:left;
-    padding-left:10px;
-    line-height: 50px;
-    width:80px;
-}
-.popsong .artical p{
-    padding-left:30px;
-}
-
-.conbox .center{
-    background: #fff;
-    width:890px;
-    margin-left:130px;
-    color:#999;
-    padding-bottom:100000px;
-    margin-bottom:-100000px
-}
-.conbox .center a{
-    color:#999;
-}
 .center .cleft{
     width:200px;
     float:left;
@@ -144,9 +46,22 @@
     height:260px;
     font-size:2rem;
     line-height: 260px;
-    text-align: center;
     margin:0 auto;
-    border:1px solid #dedede;
+    border:1px solid #eaeaea;
+}
+.add p{
+    margin:100px 0 0 240px;
+    width:115px;
+    height:30px;
+    line-height:30px;
+    cursor:pointer;
+}
+.add b{
+    display:inline;
+    position:static;
+    color:#999;
+    background:none;
+    border:none;
 }
 .fixededit{
     position:fixed;
@@ -164,8 +79,9 @@
 .cright .upload{
     width:350px;
     height:270px;
+    display:none;
     position:absolute;
-    top:150px;
+    top:140px;
     left:150px;
     padding:10px 10px 0 0;
     background: #fff;
@@ -176,6 +92,7 @@
     font-size:1rem;
     color:#fff;
     float:right;
+    cursor:pointer;
     background:#adadad;
     width:20px;
     height:20px;
@@ -228,11 +145,14 @@
     border:1px solid #dedede;
 }
 .cright .btn a{
+    margin-top:5px;
     width:70px;
+    height:40px;
+    line-height:40px;
     color:#7a7a7a;
     font-size:1.4rem;
 }
-.cright .btn a:hover{
+.cright .btn a:last-child{
     background:#4d4d4d;
     color:#fff;
 }
@@ -249,6 +169,25 @@
     display:none;
     border:1px solid #adadad;
     padding:0 30px 0 30px;
+}
+.edtxt .popchoose{
+    z-index: 9999;
+    width:562px;
+    padding:10px 20px 0 20px;
+    height:270px;
+    font-size:1.5rem;
+    color:#333;
+    background: #fff;
+    border:1px solid #dedede;
+    -moz-border-radius: 5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+}
+.edtxt .popchoose li{
+    width:200px;
+    margin-top:10px;
+    line-height:35px;
+    border-bottom:1px solid #dedede;
 }
 .edtxt .popchoose ul{
     padding-left:0;
@@ -268,40 +207,6 @@
     border:1px solid #dedede;
     color:#999;
 }
-.conbox .left input,
-.cright .edtxt input{
-    font-size:1.4rem;
-    color:#999;
-    padding-left:10px;
-    line-height:40px;
-    height:40px;
-    width:235px;
-    border:1px solid #adadad;
-    -moz-border-radius: 5px;
-    -webkit-border-radius:5px;
-    border-radius:5px;
-}
-.conbox .left b,
-.cright .edtxt b{
-    display:block;
-    position:absolute;
-    top:16px;
-    text-align:center;
-    left:200px;
-    line-height:38px;
-    height:38px;
-    width:50px;
-    color:#fff;
-    cursor:pointer;
-    background:#8e8e8e;
-    -moz-border-radius: 5px;
-    -webkit-border-radius:5px;
-    border-radius:5px;
-}
-.conbox .left b{
-    top:8px;
-    left:184px;
-}
 .textarea{
     width:665px;
     min-height:500px;
@@ -314,85 +219,6 @@
     word-wrap: break-word;
     overflow-x: hidden;
     overflow-y: auto;
-}
-.conbox .right{
-    width:260px;
-    position:fixed;
-    top:0;
-    padding-top:100px;
-    z-index:9999;
-}
-.right li{
-    text-align:left;
-    padding-left:30px;
-}
-.right span{
-    font-weight:900;
-    font-size:25px;
-}
-.right .chesong{
-    font-size:1.4rem;
-    text-decoration: underline;
-}
-.right .checlose{
-    display: none;
-    font-size:1.4rem;
-}
-.clr {
-    clear:both;
-    height:0
-}
-
-/** ¹ö¶¯Ìõ**/
-/* main container */
-.jScrollbar {
-    width:170px;
-    height:400px;
-    overflow:hidden;
-    position:fixed;
-    margin-left:-60px;
-    background-color:#000;
-    padding:5px;
-    margin-top: 10px;
-    display: none;
-}
-/* text container */
-.jScrollbar_mask {
-    width:90%;
-    position:relative;
-    top:0;
-    float:left;
-}
-/* paragraphs */
-.jScrollbar .jScrollbar_mask p {
-    margin:0;
-    padding:0;
-    color:#c9c9c9;
-    font-size:1.2rem;
-    text-align: center;
-    /* text-indent: 1rem; */
-}
-/* slider container */
-.jScrollbar_draggable {
-    float:left;
-    width:6%;
-    height:380px;
-    overflow:hidden;
-    /* 	background:transparent url('../images/bg_jScrollbar_draggable.jpg') repeat-y center top; */
-    margin-left:4px;
-    position:relative;
-    top:0;
-}
-/** draggable **/
-.jScrollbar_draggable a.draggable {
-    position:relative;
-    background-color:#a1a1a1;
-    display:block;
-    height:120px;
-    width:9px;
-    margin-left:6px;
-    /* cursor:s-resize; */
-    cursor:pointer;
 }
 /*±à¼­Ò³Ê×Ò³½áÊø*/
 

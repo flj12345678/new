@@ -1,0 +1,44 @@
+/**
+ *
+ * @authors Your Name (you@example.org)
+ * @date    2015-11-10 10:50:32
+ * @version $Id$
+ */
+*{
+    margin: 0;
+    padding:0;
+}
+html{
+    height:100%;
+}
+body{
+    font-family:"微软雅黑", "宋体","Glyphicons Halflings", "Microsoft Yahei", "华文黑体", "STHeiti", "Helvetica Neue", Helvetica,"FontAwesome","sans-serif";
+    font-size: 1.6rem;
+   height:100%;
+    background: #000!important;
+}
+
+p{
+    margin:0;
+    padding:0;
+}
+
+ul,ol,li{
+    list-style: none;
+}
+img {
+    border: none;vertical-align: middle; -ms-interpolation-mode: bicubic;
+}
+
+a{
+    text-decoration:none;
+    color:#fff;
+}
+a:hover{
+    text-decoration:none;
+}
+
+a:focus,
+button:focus{
+    outline:none;
+}
