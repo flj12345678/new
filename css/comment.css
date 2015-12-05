@@ -5,7 +5,7 @@
     margin:0 auto;
     position:relative;
 }
-.conbox input{
+.content .conbox input{
     font-size:1.4rem;
     color:#999;
     padding-left:10px;
@@ -17,12 +17,12 @@
     -webkit-border-radius:5px;
     border-radius:5px;
 }
-.conbox  b{
+.conbox b{
     display:block;
     position:absolute;
-    top:16px;
+    top:8px;
     text-align:center;
-    left:200px;
+    left:184px;
     line-height:38px;
     height:38px;
     width:50px;
@@ -39,7 +39,7 @@
     width:890px;
     margin-left:130px;
     color:#999;
-    min-height:100%;
+    min-height:2000px;
 }
 .conbox .center a{
     color:#999;
@@ -52,10 +52,7 @@
     width:130px;
     line-height:50px;
 }
-.conbox .left b{
-    top:8px;
-    left:184px;
-}
+
 .left a{
     display: block;
     height:60px;
@@ -72,13 +69,31 @@
     -webkit-border-radius:5px;
     border-radius:5px;
 }
-.left li:last-child button{
-    width: 48px;
-    height: 48px;
+.left button span{
+    width: 40px;
+    height: 40px;
+    line-height:40px;
     font-size:2rem;
-    line-height: 48px;
+}
+.left li:last-child button{
+    margin-left:-15px;
+    width:50px;
+    height:40px;
+    background: none;
+    border:none;
+}
+.left .popinput {
+    position:absolute;
+    left:100px;
+    bottom:28px;
+    z-index:9998;
+    display: none
 }
 .left .popsong{
+    position:absolute;
+    left:110px;
+    bottom:72px;
+    display: none;
     z-index: 9999;
     width:562px;
     padding:10px 20px 0 20px;

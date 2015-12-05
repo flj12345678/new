@@ -65,9 +65,14 @@
 
  /* 左侧导航搜索框*/
        $(document).ready(function( ) {
-	        $(".left li button").click(function(){
+		   var but= $(".left li button")
+	       but .click(function(){
 		       $(".left div").eq(0).toggle();
 	      });
+		   /*
+		   but.blur(function(){
+			   $(".left div").eq(0).hide();
+		   });*/
       });
 
 

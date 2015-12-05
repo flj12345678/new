@@ -1,5 +1,8 @@
 
 /*Ñ¡Ôñ¸èÇúÒ³*/
+.conbox .center{
+    min-height:1000px;
+}
 .centerbox{
     width:720px;
     padding-top:100px;
@@ -13,7 +16,7 @@
     height:40px;
     position: relative;
 }
-.csearch input{
+.centerbox .csearch input{
     line-height:45px;
     height:45px;
     width:510px;

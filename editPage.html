@@ -1,4 +1,4 @@
-/*编辑页*/
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,15 +28,15 @@
                         <a href="editPage.html"><button type="button" class="am-btn am-btn-default" style="color:#999">写听后感</button></a>
                     </li>
                     <li>
-                            <button style="background: none;border:none">
-                               <span class="am-icon-search am-icon-btn am-dropdown-toggle" ></span>
-                            </button>
+                        <button>
+                            <span class="am-icon-search am-icon-btn am-dropdown-toggle" ></span>
+                        </button>
                      </li>
                   </ul>
-                <div  style="position:absolute;left:100px;bottom:28px;z-index: 9998;display: none">
+                <div class="popinput">
                     <p><input type="search" placeholder="搜听后感、歌曲"/><b class="am-icon-search"></b></p>
                 </div>
-                <div class="popsong" style="position:absolute;left:110px;bottom:72px;z-index: 9999;background:#fff;display: none">
+                <div class="popsong" style="">
                     <div class="sglist">
                         <p>歌曲</p>
                         <ul>
@@ -74,7 +74,7 @@
                 <div class="add mobilenone">
                     <p><b class="am-icon-plus"></b>添加封面</p>
                 </div>
-                <div class="upload">
+                <div class="upload mobilenone">
                     <span class="am-icon-btn am-icon-close"></span>
                     <p style="color:#000;">本地上传<strong style="color:#999">或</strong>网络图片</p>
                     <button>选择图片上传</button>
@@ -97,23 +97,23 @@
                         <form class="am-form">
                             <div class="bot" style="padding:1rem">
                                 <input type="search" placeholder="请输入标题" style="height:40px;font-size:2.3rem;"/>
-                                <input type="search" placeholder="请选择歌曲" style="height:30px;font-size:1.5rem;"/>
-                                <textarea rows="10" placeholder="请输入正文" style="font-size:1.8rem;border: 0"></textarea>
+                                <input type="search" placeholder="请选择歌曲" style="height:30px;line-height:30px;font-size:1.5rem;"/>
+                                <textarea  placeholder="请输入正文" style="font-size:1.8rem;border:0;height:100px;"></textarea>
                             </div>
                         </form>
                     </div>
                     <!-- pc端、手机端下图标-->
                     <div class="edicon" style="height: 53px;">
-                    <span class="icon am-fl" >
-                        <a href="#" class="word">词</a>
-                        <a href="#" class="am-icon-rotate-left"></a>
-                        <a href="#" class="am-icon-rotate-right"></a>
-                        <a href="#" class=" am-icon-chevron-down am-fr pcnone"></a>
-                    </span>
-                    <span class="btn am-fr mobilenone">
-                        <a href="#">保存</a>
-                        <a href="#">发布</a>
-                    </span>
+                        <span class="icon am-fl" >
+                           <a href="#" class="word">词</a>
+                           <a href="#" class="am-icon-rotate-left"></a>
+                           <a href="#" class="am-icon-rotate-right"></a>
+                           <a href="#" class=" am-icon-chevron-down am-fr pcnone"></a>
+                       </span>
+                       <span class="btn am-fr mobilenone">
+                          <a href="#">保存</a>
+                          <a href="#">发布</a>
+                       </span>
                     </div>
                     <div class="edtxt mobilenone">
                         <form class="am-form">
@@ -125,7 +125,7 @@
                                     <p><input type="search" placeholder="请选择歌曲名称"/><b class="am-icon-search"></b></p>
                                 </div>
                             </div>
-                            <textarea  placeholder="输入文本....." style="height:800px;width:650px;margin-left:20px;border:none;resize:none;"></textarea>
+                            <textarea  placeholder="输入文本....."></textarea>
                         </form>
                         <div class="popchoose">
                                 <p>歌曲</p>
@@ -204,22 +204,6 @@
 </div>
 
 
-    <script type="text/javascript">
-        $(document).ready(function(e) {
-            var edt=$(".editwrite");
-            var win=$(window);
-            var sc=$(document);
-
-            win.scroll(function(){
-                if(sc.scrollTop()>=359){
-                    sc.scrollTop(359);
-                    edt.addClass("fixededit");
-                }else{
-                    edt.removeClass("fixededit");
-                }
-            })
-        });
-    </script>
     <script src="js/modernizr.min.js"></script>
     <!--[if (gte IE 6)&(lte IE 8)]>
     <script src="js/respond.min.js"></script>
@@ -233,5 +217,21 @@
 <script type="text/javascript" src="js/jquery-mousewheel.js"></script>
 <script type="text/javascript" src="js/jScrollbar.jquery.js"></script>
 <script type="text/javascript" src="js/style.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(e) {
+        var edt=$(".editwrite");
+        var win=$(window);
+        var sc=$(document);
+
+        win.scroll(function(){
+            if(sc.scrollTop()>=359){
+                sc.scrollTop(359);
+                edt.addClass("fixededit");
+            }else{
+                edt.removeClass("fixededit");
+            }
+        })
+    });
+</script>
  </body>
 </html>
